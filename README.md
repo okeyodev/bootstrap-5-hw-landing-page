@@ -15,7 +15,7 @@ This landing page serves as a showcase for an online web development course offe
 
 ### Screenshot
 
-[OKEYODE](screenshot-bs-hw.png.)
+![OKEYODEV Landing Page](screenshot-bs-hw.png)
 
 
 
