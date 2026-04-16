@@ -21,7 +21,7 @@ This landing page serves as a showcase for an online web development course offe
 
 ### 🌐 Live Demo Link
 
-**Coming Soon**: [View Live Demo](https://yourusername.github.io/hero-bootstrap-landing-page)
+**Demo**: [View Live Demo]( https://okeyodev.github.io/bootstrap-5-hw-landing-page/)
 
 
 
@@ -217,13 +217,13 @@ This project is open source and available under the MIT License. See the LICENSE
 
 **Your Name**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@okeyodev](https://github.com/okeyodev)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/hero-bootstrap-landing-page/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/okeyodev/bootstrap-5-landing-page/issues).
 
 ## 📞 Support
 
