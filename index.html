@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/syle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <title>Bootstrap 5 Landing Page</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark text-light p-3">
+    <div class="container" id="#top">
+      <a href="#" class="navbar-brand text-light">OKEYODEV</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#learn" class="nav-link">What you'll learn</a>
+          </li>
+          <li class="nav-item">
+            <a href="#question" class="nav-link">Question</a>
+          </li>
+          <li class="nav-item">
+            <a href="#instructors" class="nav-link">Instructors</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- || Showcase || -->
+  <section class="bg-dark text-light text-center text-md-start">
+    <div class="container">
+      <div class="d-md-flex align-items-center p-4">
+        <div class="px-5 py-4">
+          <h1>Become a <span class="text-warning">Web Developer</span></h1>
+          <p class="lead py-3">Go from absolute beginner to becoming a paid professionals.Working in real life projects
+          </p>
+          <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#registerModal">Register
+            Now!</button>
+        </div>
+        <img src="image/img_vic.png" alt="Okeyode Victor image"
+          class="img-fluid bg-primary rounded-circle w-mb-50 border border-primary border-4">
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade text-dark" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Register</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we'll get back to you</p>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+              <label for="floatingInput">First Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Last Name">
+              <label for="floatingInput">Last Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="number" class="form-control" id="floatingPhoneNumber" placeholder="Phone Number">
+              <label for="floatingPhoneNumber">Phone Number</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- || New letter || -->
+  <section class="bg-primary text-light p-3">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="text-center text-md-start mb-3">Sign Up for Our Newsletter</h3>
+
+        <div class="input-group news-input">
+          <input type="email" class="form-control" placeholder="Enter Email">
+          <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Button</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- || Cards || -->
+  <section class="py-5" id="boxes">
+    <div class="container">
+      <div class="row text-center g-3 g-md-4 px-3">
+
+        <div class="col-md">
+          <div class="card bg-secondary text-light">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <h1><i class="bi bi-laptop"></i></h1>
+
+              <h3 class="card-title">Virtual</h3>
+
+              <p class="card-text">
+                Join live, interactive sessions from home, offering flexibility and hands-on learning in our class
+              </p>
+
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <h1><i class="bi bi-file-earmark-code"></i></h1>
+
+              <h3 class="card-title">Project Based</h3>
+
+              <p class="card-text">
+                Gain real-world experience by working on project that build your skills as a fullstack developer&period;
+              </p>
+
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+          <div class="card bg-secondary text-light">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <h1><i class="bi bi-patch-check"></i></h1>
+
+              <h3 class="card-title">Certificate</h3>
+
+              <p class="card-text">Earn a recognized certificate that validates your expertise in fullstack web
+                development</p>
+
+              <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--|| Intro Section || -->
+  <section class="py-5 px-3">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img src="image/4403-removebg-preview.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-md text-center text-md-start">
+          <h2>Go from zero to Hero</h2>
+          <p class="lead">
+            Transform your skill from beginner to advance with our comprehensive course designed for all levels&period;
+          </p>
+          <p>
+            Whether you&apos;re just starting out or looking to deepen your expertise, our tailored programs provide
+            hands on learning experience to help you succeed&period; With guidance from industry professionals&comma;
+            you&apos;ll build confidence and master the skill you need to thrive in your career&period;
+          </p>
+
+          <a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-right"></i> Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- || Learn Section ||-->
+  <section class="pt-5 bg-dark text-light px-3" id="learn">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md text-center text-md-start">
+          <h2>Master ReactJS&comma; NodeJS&comma; ExpressJs&comma; MongoDB&comma; and Next&period;js</h2>
+          <p class="lead mt-3">
+            Become a full-stack developer with our comprehensive courses on ReactJS&comma; NodeJS&comma;
+            ExpressJs&comma; MongoDB&comma; and Next&period;js&period;
+          </p>
+          <p class="mt-1">
+            Learn to build responsive front&hyphen;end application with ReactJS&comma; optimize your development with
+            Next&period;js&comma; create powerful back&hyphen;end services using NodeJS and ExpressJS&comma; and
+            efficiently manage database with MongoDB&period; Our hands&hyphen; on courses offer real&hyphen;world
+            projects and expert guidance to help you master modern web development technologies&period;
+          </p>
+
+          <a href="#" class="btn btn-light mt-2"><i class="bi bi-chevron-right"></i> Read More</a>
+        </div>
+
+        <div class="col-md">
+          <img src="image/react-tran.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- || Accordion || -->
+  <section class="py-5 text-center text-md-start" id="question">
+    <div class="container text-md-start">
+      <h2 class="text-center mb-2">Frequently Asked Question</h2>
+
+      <!-- Question 1 -->
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              What is the duration of this course&quest;
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">The course is designed to be completed over a span of
+              <code>7 months</code>&comma; with a commitment of approximately 5-7
+              hours per week. Each week includes video lectures&comma; reading
+              materials, and assignments that help reinforce the concepts
+              learned&period; While the course is self-paced&comma; we encourage
+              participants to stay on track with the weekly schedule to
+              maximize their learning experience&period;
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              What will i be able to build&quest;
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              By the end of the course&comma; you will have the skills to build
+              several web applications&period; Examples include a **personal
+              portfolio website** that showcases your projects and skills&comma; a
+              **dynamic e-commerce platform** with user authentication and
+              payment integration&comma; and a **real-time chat application** using
+              WebSockets&period; Additionally&comma; you will learn to create a **task
+              management tool** similar to Trello&comma; using ReactJS for the front
+              end&comma; NodeJS and ExpressJS for the backend&comma; and MongoDB as the
+              database&period; You may also build small applications that integrate
+              with third-party APIs&comma; such as a **weather dashboard** that
+              fetches real-time data from a weather API&period; The final project
+              will be a comprehensive application that incorporates all these
+              skills&comma; serving as a capstone to demonstrate your proficiency
+              and creativity&comma; providing you with a portfolio piece to show
+              potential employers or clients&period;
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Is the certificate after the training&quest;
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Yes&comma; upon successfully completing the course and all of its
+              assessments&comma; you will receive a
+              <code>certificate of completion</code>&period; This certificate is a
+              great way to showcase your newly acquired skills on your resume&comma;
+              LinkedIn profile&comma; or personal website&period; It is important to note
+              that the certificate is not an official accreditation but serves
+              as recognition of your hard work and dedication in completing
+              the course&period;
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              What prerequisite do i need for this course&quest;
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              This course is designed for beginners&comma; so no prior programming
+              experience is required&period; However&comma; a basic understanding of how to
+              use a computer and navigate the internet is helpful&period; We also
+              recommend having a good grasp of problem-solving skills and
+              logical thinking&period; All necessary software tools and resources
+              will be provided&comma; and you will be guided step-by-step through
+              the setup and use of each one&period;
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              What kind of support will i receive during this training&quest;
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Throughout the course&comma; you will have access to a range of
+              support options&period; These include a dedicated course forum where
+              you can ask questions and get help from instructors and fellow
+              students&comma; weekly live Q&A sessions with the course instructor&comma;
+              and 24/7 access to all course materials&period; If you encounter any
+              technical issues or have questions about the course content&comma; our
+              support team is available to assist you via email or chat&period;
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- || Instructors || -->
+  <section class="py-5 bg-primary" id="instructors">
+    <div class="container text-center">
+      <h2 class="text-light">Our Instructors</h2>
+      <p class="lead text-light">Our instructors are 5 star rated instructors with over 5+ years
+        working as dedicated web developers in the industry
+      </p>
+
+      <div>
+        <div class="row g-4 mt-2 ">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body pt-4">
+                <img src="image/img_vic.png" alt="Okeyode Victor's image"
+                  class="img-fluid rounded-circle border border-secondary border-2">
+                <h1 class="card-title py-2">Okeyo Victor</h1>
+                <p class="card-text">David is a seasoned full&hyphen;stack developer and mentor&comma; specializing
+                  in building scalable web applications and teaching the MERN stack&period;
+                </p>
+                <a href="" class="bi bi-twitter text-dark mx-1"></a>
+                <a href="" class="bi bi-facebook text-dark mx-1"></a>
+                <a href="" class="bi bi-linkedin text-dark mx-1"></a>
+                <a href="" class="bi bi-instagram text-dark mx-1"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body pt-4">
+                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Helen Paul"
+                  class="img-fluid rounded-circle border border-secondary border-2">
+                <h1 class="card-title py-2">Helen Paul</h1>
+                <p class="card-text">
+                  An expert in user experience design&comma; Helen has over 10 years of
+                  experience working with top global brands&period;
+                </p>
+                <a href="" class="bi bi-twitter text-dark mx-1"></a>
+                <a href="" class="bi bi-facebook text-dark mx-1"></a>
+                <a href="" class="bi bi-linkedin text-dark mx-1"></a>
+                <a href="" class="bi bi-instagram text-dark mx-1"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body pt-4">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Mark Philip's image"
+                  class="img-fluid rounded-circle border border-secondary border-2">
+                <h1 class="card-title py-2">Mark Philip</h1>
+                <p class="card-text">
+                  A full-stack developer with a passion for teaching&comma; Mark specializes
+                  in JavaScript frameworks and backend systems&period;
+                </p>
+                <a href="" class="bi bi-twitter text-dark mx-1"></a>
+                <a href="" class="bi bi-facebook text-dark mx-1"></a>
+                <a href="" class="bi bi-linkedin text-dark mx-1"></a>
+                <a href="" class="bi bi-instagram text-dark mx-1"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <div class="card-body pt-4">
+                <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="James Brown's image"
+                  class="img-fluid rounded-circle border border-secondary border-2">
+                <h1 class="card-title py-2">James Brown</h1>
+                <p class="card-text">
+                  James is a data scientist with extensive knowledge in machine
+                  learning&comma; AI&comma; and big data technologies&period;
+                </p>
+                <a href="" class="bi bi-twitter text-dark mx-1"></a>
+                <a href="" class="bi bi-facebook text-dark mx-1"></a>
+                <a href="" class="bi bi-linkedin text-dark mx-1"></a>
+                <a href="" class="bi bi-instagram text-dark mx-1"></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- || Contact Us || -->
+  <section class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <h2 class="text-center">Contact Us</h2>
+
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item"><span class="fw-bold">Main Location: </span> Ilorin, Kwara State </li>
+            <li class="list-group-item"><span class="fw-bold">Enrollment Phone: </span>enrollment@gmail.com</li>
+            <li class="list-group-item"><span class="fw-bold">Student Phone: </span>090743728123</li>
+            <li class="list-group-item"><span class="fw-bold">Student Email: </span>student@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-md text-center">
+          <img src="image/contant-us-tran.png" alt="" class="img-fluid w-60">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- || Footer Section || -->
+  <section class="p-5 bg-dark text-light position-relative">
+    <div class="container text-center d-flex justify-content-center">
+      <p class="lead d-inline">Copy &copy; 2026 Fullstack Bootcamp</p>
+
+      <a href="#" class="position-absolute end-0 ">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+/* Professional Color System */
+:root {
+  --primary-color: #0D7377;
+  --primary-light: #14919B;
+  --primary-dark: #0A5A61;
+  --secondary-color: #2C3E50;
+  --accent-color: #E8A537;
+  --success-color: #27AE60;
+  --danger-color: #E74C3C;
+  --dark-bg: #1a1a1a;
+  --light-bg: #F7F9FC;
+  --text-dark: #2C3E50;
+  --text-light: #FFFFFF;
+  --border-color: #DDE1E6;
+}
+
+/* Bootstrap Primary Color Override */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Bootstrap Dark Override */
+.bg-dark {
+  background-color: var(--dark-bg) !important;
+}
+
+.navbar-dark {
+  background-color: var(--dark-bg) !important;
+}
+
+/* Bootstrap Secondary Override */
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+/* Accent Color - Warning Override */
+.text-warning {
+  color: var(--accent-color) !important;
+}
+
+.bg-warning {
+  background-color: var(--accent-color) !important;
+}
+
+/* Light Background Override */
+.bg-light {
+  background-color: var(--light-bg) !important;
+}
+
+/* Text Colors */
+.text-dark {
+  color: var(--text-dark) !important;
+}
+
+/* Links Styling */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-light);
+}
+
+.nav-link {
+  color: var(--text-light) !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Card Styling */
+.card {
+  border-color: var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(13, 115, 119, 0.15);
+}
+
+/* Form Elements */
+.form-control {
+  border-color: var(--border-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(13, 115, 119, 0.25);
+}
+
+/* Component Specific */
+#boxes .card {
+  min-height: 270px;
+}
+
+#instructors img {
+  width: 100px;
+}
+
+#instructors .card {
+  min-height: 400px;
+}
+
+/* Responsive Breakpoint */
+@media(min-width: 768px) {
+  .news-input {
+    width: 50%;
+    height: 50%;
+  }
+}
